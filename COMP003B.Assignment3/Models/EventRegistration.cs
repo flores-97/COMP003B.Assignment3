@@ -15,7 +15,7 @@ namespace COMP003B.Assignment3.Models
         [StringLength(100)]
         public string Email { get; set; }
 
-        public string EventCode { get; set; }
+        public string EventCode { get; set; } 
 
         [Range(1, 10)]
         public int Tickets { get; set; }
