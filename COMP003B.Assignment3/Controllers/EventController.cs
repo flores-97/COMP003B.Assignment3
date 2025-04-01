@@ -23,10 +23,11 @@ namespace COMP003B.Assignment3.Controllers
             {
                 return View(register);
             }
-            return RedirectToAction("Success", register);
+            return RedirectToAction("Event/Success", register);
         }
 
         [Route("Event/Success")]
+        [HttpGet("Event/Success")]
         public IActionResult Success(Register register)
         {
             return View(register);
