@@ -14,7 +14,7 @@ namespace COMP003B.Assignment3.Controllers
         }
 
 
-        [HttpPost("register")]
+        [HttpPost("event/register")]
         public IActionResult Register([FromForm] Register register)
         {
             if (!ModelState.IsValid)
@@ -24,7 +24,7 @@ namespace COMP003B.Assignment3.Controllers
             return RedirectToAction("Success", register);
         }
 
-        [Route("success")]
+        [Route("event/success")]
         public IActionResult Success(Register register)
         {
             return View(register);
