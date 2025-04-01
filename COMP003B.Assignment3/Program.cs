@@ -1,3 +1,9 @@
+/*
+ * Author: Victor Flores
+ * Course: COMP-003B ASP.NET Core
+ * Faculty: Jonathon Cruz
+ * Purpose: Apply routing, model binding, and validation in ASP.NET Core. 
+ */
 namespace COMP003B.Assignment3
 {
     public class Program
