@@ -2,8 +2,11 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-
-    ViewData["Title"] = "Event Registration";
+    ViewData["Title"] = "Register - Success";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model Register
+
+<h2>Registration Successful</h2>
+<p>Thank you, @Model.FullName!</p>
+<p>The email you entered is @Model.Email</p>
+<p>You have successfully registered for @Model.EventCode with @Model.Tickets.</p>
