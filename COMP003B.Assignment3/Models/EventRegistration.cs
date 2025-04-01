@@ -2,7 +2,7 @@
 
 namespace COMP003B.Assignment3.Models
 {
-    public class EventRegistration
+    public class Register
     {
         public int Id { get; set; }
 

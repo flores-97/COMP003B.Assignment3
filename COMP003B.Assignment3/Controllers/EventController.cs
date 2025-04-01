@@ -7,14 +7,15 @@ namespace COMP003B.Assignment3.Controllers
     public class EventController : Controller
     {
         //Get: Register/EventCode
-        [HttpGet("eventcode")]
-        public IActionResult Create()
+        [HttpGet("/event/register/spring-2025")]
+        public IActionResult Register()
         {
             return View();
         }
 
+
         [HttpPost("register")]
-        public IActionResult Register([FromForm] EventRegistration register)
+        public IActionResult Register([FromForm] Register register)
         {
             if (!ModelState.IsValid)
             {
@@ -24,7 +25,7 @@ namespace COMP003B.Assignment3.Controllers
         }
 
         [Route("success")]
-        public IActionResult Success(EventRegistration register)
+        public IActionResult Success(Register register)
         {
             return View(register);
         }
