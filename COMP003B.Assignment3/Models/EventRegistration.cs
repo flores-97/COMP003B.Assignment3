@@ -8,15 +8,17 @@ namespace COMP003B.Assignment3.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [MinLength(3)]
         public string FullName { get; set; }
 
         [Required]
         [StringLength(100)]
         public string Email { get; set; }
 
-        public string EventCode { get; set; } 
-
+        [StringLength(20)]
+        public string EventCode { get; set; }
+        
+        [Required]
         [Range(1, 10)]
         public int Tickets { get; set; }
 

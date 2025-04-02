@@ -4,6 +4,8 @@
  * Faculty: Jonathon Cruz
  * Purpose: Apply routing, model binding, and validation in ASP.NET Core. 
  */
+using COMP003B.Assignment3.Middleware;
+
 namespace COMP003B.Assignment3
 {
     public class Program
@@ -26,7 +28,10 @@ namespace COMP003B.Assignment3
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
+
+            app.UseMiddleware<RequestLoggingMiddleware>();
 
             app.UseRouting();
 
