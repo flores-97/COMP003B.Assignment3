@@ -9,14 +9,14 @@ namespace COMP003B.Assignment3.Controllers
     {
         //Get: Register/EventCode
         [HttpGet("/event/register/{eventCode}")]
-        [HttpGet("Event/Register")]
+        [HttpGet("/Event/Register")]
         public IActionResult Register()
         {
             return View();
         }
 
 
-        [HttpPost("Register")]
+        [HttpPost("/Event/Register")]
         public IActionResult Register([FromForm] Register register)
         {
             if (!ModelState.IsValid)
