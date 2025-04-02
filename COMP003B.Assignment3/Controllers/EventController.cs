@@ -8,7 +8,8 @@ namespace COMP003B.Assignment3.Controllers
     public class EventController : Controller
     {
         //Get: Register/EventCode
-        [HttpGet("/event/register/spring-2025")]
+        [HttpGet("/event/register/{eventCode}")]
+        [HttpGet("Event/Register")]
         public IActionResult Register()
         {
             return View();
