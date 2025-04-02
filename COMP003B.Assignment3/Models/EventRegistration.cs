@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace COMP003B.Assignment3.Models
 {
     public class Register
-    {
+    { 
         public int Id { get; set; }
 
         [Required]
