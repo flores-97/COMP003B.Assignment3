@@ -12,6 +12,9 @@
 <p>Thank you, <strong>@Model.FullName</strong>!</p>
 <p>The email you entered is @Model.Email</p>
 <p>You have successfully registered for <strong>@Model.EventCode</strong> with <strong>@Model.Tickets</strong> .</p>
-
+@if(!string.IsNullOrEmpty(Model.ReferralCode))
+{
+    <p>Referral Code: @Model.ReferralCode</p>
+}
 
 <partial name-="_EventNav" />
